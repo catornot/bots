@@ -27,9 +27,9 @@ def click(x,y):
 def drag(pos1,pos2):
     win32api.SetCursorPos(pos1)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0)
-    sleep(0.2) #This pauses the script for 0.1 seconds
+    sleep(0.1) #This pauses the script for 0.1 seconds
     win32api.SetCursorPos(pos2)
-    sleep(0.2)
+    sleep(0.3)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
 
 def getclip():
